@@ -2,5 +2,5 @@
     organization = "<MY_ORG>"
 
     workspaces {
-      name = ""<MY_WORKSPACE>"
+      name = "<MY_WORKSPACE>"
     }
