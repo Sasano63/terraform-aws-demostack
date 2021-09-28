@@ -10,7 +10,10 @@ locals {
     ttl       = var.TTL
   }
 }
-
+variable "region" {
+  description = "primary AWS region"
+  default     = "eu-central-1"
+}
 variable "se-region" {
   description = "Mandatory tags for the SE organization"
 }
@@ -210,7 +213,3 @@ variable "primary_datacenter" {
   default     = ""
 }
 
-variable "primary_region" {
-  description = "primary AWS region"
-  default     = "eu-central-1"
-}
