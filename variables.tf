@@ -44,14 +44,14 @@ variable "clusters" {
       region    = "eu-west-2"
       namespace = "primarystack"
     },
-    secondary = {
-      region    = "eu-east-1"
-      namespace = "secondarystack"
-    },
-    tertiary = {
-      region    = "ap-northeast-1"
-      namespace = "tertiarystack"
-    },
+    # secondary = {
+    #   region    = "eu-east-1"
+    #   namespace = "secondarystack"
+    # },
+    # tertiary = {
+    #   region    = "ap-northeast-1"
+    #   namespace = "tertiarystack"
+    # },
   }
 }
 
@@ -67,42 +67,42 @@ variable "workers" {
 
 variable "consul_url" {
   description = "The url to download Consul."
-  default     = "https://releases.hashicorp.com/consul/1.2.2/consul_1.2.2_linux_amd64.zip"
+  default     = "https://releases.hashicorp.com/consul/1.10.2/consul_1.10.2_linux_amd64.zip"
 }
 
 variable "consul_ent_url" {
   description = "The url to download Consul."
-  default     = "https://releases.hashicorp.com/consul/1.2.2/consul_1.2.2_linux_amd64.zip"
+  default     = "https://releases.hashicorp.com/consul/1.10.2+ent/consul_1.10.2+ent_linux_amd64.zip"
 }
 
 variable "fabio_url" {
   description = "The url download fabio."
-  default     = "https://github.com/fabiolb/fabio/releases/download/v1.5.7/fabio-1.5.7-go1.9.2-linux_amd64"
+  default     = "https://github.com/fabiolb/fabio/releases/download/v1.5.15/fabio-1.5.15-go1.15.5-linux_amd64"
 }
 
 variable "nomad_url" {
   description = "The url to download nomad."
-  default     = "https://releases.hashicorp.com/nomad/0.8.4/nomad_0.8.4_linux_amd64.zip"
+  default     = "https://releases.hashicorp.com/nomad/1.1.5/nomad_1.1.5_linux_amd64.zip"
 }
 
 variable "nomad_ent_url" {
   description = "The url to download nomad."
-  default     = "https://releases.hashicorp.com/nomad/0.8.4/nomad_0.8.4_linux_amd64.zip"
+  default     = "https://releases.hashicorp.com/nomad/1.1.5+ent/nomad_1.1.5+ent_linux_amd64.zip"
 }
 
 variable "cni_plugin_url" {
   description = "The url to download teh CNI plugin for nomad."
-  default     = "https://github.com/containernetworking/plugins/releases/download/v0.8.2/cni-plugins-linux-amd64-v0.8.2.tgz"
+  default     = "https://github.com/containernetworking/plugins/releases/download/v0.9.1/cni-plugins-linux-amd64-v0.9.1.tgz"
 }
 
 variable "vault_url" {
   description = "The url to download vault."
-  default     = "https://releases.hashicorp.com/vault/0.11.1/vault_0.11.1_linux_amd64.zip"
+  default     = "https://releases.hashicorp.com/vault/1.8.2/vault_1.8.2_linux_amd64.zip"
 }
 
 variable "vault_ent_url" {
   description = "The url to download vault."
-  default     = "https://s3-us-west-2.amazonaws.com/hc-enterprise-binaries/vault/ent/0.11.1/vault-enterprise_0.11.1%2Bent_linux_amd64.zip"
+  default     = "https://releases.hashicorp.com/vault/1.8.2+ent/vault_1.8.2+ent_linux_amd64.zip"
 }
 
 variable "owner" {
