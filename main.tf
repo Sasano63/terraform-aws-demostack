@@ -40,7 +40,9 @@ provider "aws" {
   region = var.primary_region
   #  alias   = "primary"
   default_tags {
-    tags = local.common_tags
+    tags = {
+      tags = local.common_tags
+    }
   }
 }
 
