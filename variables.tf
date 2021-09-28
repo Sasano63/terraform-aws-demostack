@@ -209,3 +209,8 @@ variable "primary_datacenter" {
   description = "the primary datacenter for mesh gateways"
   default     = ""
 }
+
+variable "primary_region" {
+  description = "primary AWS region"
+  default = "eu-central-1"
+}
