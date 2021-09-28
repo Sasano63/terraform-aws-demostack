@@ -37,7 +37,7 @@ data "terraform_remote_state" "dns" {
 //--------------------------------------------------------------------
 
 provider "aws" {
-#  region  = var.primary_region
+  region  = var.primary_region
 #  alias   = "primary"
 default_tags {
     tags = local.common_tags
