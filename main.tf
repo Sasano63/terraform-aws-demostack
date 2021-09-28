@@ -39,12 +39,15 @@ data "terraform_remote_state" "dns" {
 provider "aws" {
   region = var.region
   default_tags {
-    Name      = var.name
-    owner     = var.owner
-    se-region = var.se-region
-    terraform = true
-    purpose   = var.purpose
-    ttl       = var.TTL
+    tags = {
+      Name      = var.name
+      owner     = var.owner
+      se-region = var.se-region
+      terraform = true
+      purpose   = var.purpose
+      ttl       = var.TTL
+    }
+
   }
 }
 
