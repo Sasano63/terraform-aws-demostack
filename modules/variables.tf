@@ -19,7 +19,7 @@ variable "vault_oracle_client_url" {
 
 variable "region" {
   description = "The region to create resources."
-  default     = "eu-central-1"
+  default     = "eu-west-2"
 }
 
 variable "namespace" {

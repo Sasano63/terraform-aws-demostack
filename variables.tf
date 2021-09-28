@@ -12,7 +12,7 @@ locals {
 }
 variable "region" {
   description = "primary AWS region"
-  default     = "eu-central-1"
+  default     = "eu-west-2"
 }
 variable "se-region" {
   description = "Mandatory tags for the SE organization"
