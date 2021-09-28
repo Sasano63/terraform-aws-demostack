@@ -6,7 +6,7 @@ terraform {
     hostname     = "app.terraform.io"
     organization = "sasano"
     workspaces {
-      name = "sasano-AWS-demostack"
+      name = "terraform-aws-demostack"
     }
   }
 }
@@ -37,13 +37,7 @@ data "terraform_remote_state" "dns" {
 //--------------------------------------------------------------------
 
 provider "aws" {
-  region = var.primary_region
-  #  alias   = "primary"
-  default_tags {
-    tags = {
-      tags = local.common_tags
-    }
-  }
+  region = var.region
 }
 
 
